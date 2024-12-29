@@ -15,7 +15,7 @@ public class SSAWebOperationsRestController {
 	public ResponseEntity<String> getStateBySSN(@PathVariable Integer ssn) {
 		
 		if(String.valueOf(ssn).length() !=9) {
-			return new ResponseEntity<String>("Invalid ssn",HttpStatus.BAD_REQUEST);
+			return new ResponseEntity<String>("Invalid ssn rn",HttpStatus.BAD_REQUEST);
 		}
 		
 		int stateCode = ssn%100 ;
